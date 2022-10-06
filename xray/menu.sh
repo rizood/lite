@@ -59,7 +59,7 @@ fi
 
 clear
 echo -e "${RED}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[47;0;30m                       • INFORMATION VPS •                    \E[0m"
+echo -e "\E[47;1;30m                       • INFORMATION VPS •                    \E[0m"
 echo -e "${RED}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\e[32;1mServer Uptime\e[0m     = $( uptime -p  | cut -d " " -f 2-10000 ) "
 echo -e "\e[32;1mLocation Time\e[0m     = $( date -d "0 days" +"%d-%m-%Y | %X" )"
@@ -69,7 +69,7 @@ echo -e "\e[32;1mDomain Server\e[0m     = $( cat /etc/xray/domain )"
 echo -e "\e[32;1mAutoScript By    \e[0m = @GHReyz"
 echo -e "\e[32;1mScript Validity  \e[0m = Lifetime"
 echo -e "${RED}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[47;0;30m                        • MENU SCRIPT •                       \E[0m"
+echo -e "\E[47;1;30m                        • MENU SCRIPT •                       \E[0m"
 echo -e "${RED}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e " [${GREEN}01${NC}]${o} •${NC}Create Trojan Acc     [${GREEN}05${NC}]${o} •${NC}Create Vless Acc$NC"  
 echo -e " [${GREEN}02${NC}]${o} •${NC}Delete Trojan Acc     [${GREEN}06${NC}]${o} •${NC}Delete Vless Acc$NC"
