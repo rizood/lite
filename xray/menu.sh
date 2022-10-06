@@ -66,7 +66,6 @@ echo -e "\e[32;1mCurrent Time\e[0m      = $( date -d "0 days" +"%d-%m-%Y | %X" )
 echo -e "\e[32;1mOperating System\e[0m  = $( cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g' ) ( $( uname -m) )"
 echo -e "\e[32;1mCurrent Domain\e[0m    = $( cat /etc/xray/domain )"
 echo -e "\e[32;1mServer IP\e[0m         = ${IP}"
-echo -e "\e[32;1mLicense SC Limit\e[0m  = Lifetime"
 echo -e "\e[32;1mAutoScript By    \e[0m = @GHReyz"
 echo -e "\e[32;1mScript Validity  \e[0m = Lifetime"
 echo -e "${RED}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
