@@ -26,7 +26,7 @@ secs_to_human() {
     echo "Installation time : $(( ${1} / 3600 )) hours $(( (${1} / 60) % 60 )) minute's $(( ${1} % 60 )) seconds"
 }
 start=$(date +%s)
-ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
+ln -fs /usr/share/zoneinfo/Asia/Malaysia /etc/localtime
 sysctl -w net.ipv6.conf.all.disable_ipv6=1 >/dev/null 2>&1
 sysctl -w net.ipv6.conf.default.disable_ipv6=1 >/dev/null 2>&1
 
@@ -64,14 +64,12 @@ fi
 
 echo ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "$green      SCRIPT MULTY PORT               $NC"
-echo -e "$green              BY                      $NC"
-echo -e "$green        BHOIKFOST YAHYA               $NC"
+echo -e "$green      SCRIPT MULTIPORT BY Reyz-V4               $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 3
 clear
 
-yellow "Add Domain for XRAY VPN"
+yellow "Add Domain Anda for XRAY "
 echo " "
 read -rp "Input ur domain : " -e pp
     if [ -z $pp ]; then
@@ -89,7 +87,7 @@ read -rp "Input ur domain : " -e pp
     
 #Instal Xray
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "$green          Install XRAY              $NC"
+echo -e "$green          Install XRAY VPN              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
@@ -114,17 +112,15 @@ curl -sS ifconfig.me > /etc/myipvps
 
 clear
 echo " "
-echo "=====================-[ SCRIPT INFO ]-===================="
-echo ""
+echo "===============-[ SCRIPT INFO ]-================="
 echo "   >>> Service & Port"  | tee -a log-install.txt
-echo "   - Nginx                   : 81" | tee -a log-install.txt
+echo "   - Nginx                   : 81" | tee -a log-install.txt            
 echo "   - XRAY  Vmess TLS + gRPC  : 443" | tee -a log-install.txt
 echo "   - XRAY  Vmess None TLS    : 80" | tee -a log-install.txt
 echo "   - XRAY  Vless TLS + gRPC  : 443" | tee -a log-install.txt
-echo "   - XRAY  Vless None TLS    : 80" | tee -a log-install.txt
+echo "   - XRAY  Vless None TLS    : 80" | tee -a log-install.txt            
 echo "   - Trojan WS + gRPC        : 443" | tee -a log-install.txt
-echo ""
-echo "===========-[ Script Created By Reyz-V4 ]-=========="
+echo "===========-[ Script By Reyz-V4 ]-==============="
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
@@ -132,7 +128,7 @@ rm /root/setup.sh >/dev/null 2>&1
 secs_to_human "$(($(date +%s) - ${start}))" | tee -a log-install.txt
 echo -e "
 "
-echo -ne "[ ${yell}WARNING${NC} ] Silahkan Reboot Ulang Vps Anda ? (y/n)? "
+echo -ne "[ ${yell}WARNING${NC} ] Nak Reboot Ke Tidak Ni Abang ?!(y/n)? "
 read answer
 if [ "$answer" == "${answer#[Yy]}" ] ;then
 exit 0
