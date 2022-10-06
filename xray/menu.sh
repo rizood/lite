@@ -143,11 +143,10 @@ speedtest
 reboot
 exit
 ;;
-15)
-clear
+16)
 vnstat
 ;;
-16)
+15)
 clear
 passwd
 ;;
